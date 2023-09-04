@@ -1,1 +1,61 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  background-color: #fafafa;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+}
+.container {
+  max-width: 375px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+.section {
+  padding: 128px 0 0;
+  @media screen and (min-width: 768px) {
+    padding: 100px 0 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 72px 0 0;
+  }
+}
