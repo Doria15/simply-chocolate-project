@@ -1,0 +1,260 @@
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main-header {
+  margin-right: 8px;
+}
+
+.color-header {
+  color: #fd9222;
+}
+
+.how-its-made {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 32px;
+  }
+}
+
+.how-its-made.container {
+  @media screen and (min-width: 1200px) {
+    padding: 0 32px;
+  }
+}
+
+.making-chocolate {
+  @media screen and (min-width: 1200px) {
+    width: 1136px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.video-instructions {
+  @media screen and (min-width: 1200px) {
+    margin-left: 20px;
+  }
+}
+
+.video {
+  width: 335px;
+  height: 500px;
+  flex-shrink: 0;
+
+  border-radius: 15px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 614px;
+    height: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+    height: 400px;
+    margin-right: 20px;
+  }
+}
+
+.instructions {
+  display: flex;
+  padding: 20px 14px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px;
+  background-color: #fff;
+
+  @media screen and (min-width: 768px) {
+    width: 614px;
+    height: 356px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 516px;
+    height: 400px;
+    padding: 32px;
+  }
+}
+
+.instruction-title {
+  color: #111;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+
+  padding-bottom: 28px;
+}
+
+.instruction-item {
+  @media screen and (min-width: 768px) {
+    width: 550px;
+    height: 292px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 452px;
+    height: 336px;
+  }
+}
+
+.instruction-list {
+  width: 291px;
+  height: 324px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 18px;
+  gap: 18px;
+
+  @media screen and (min-width: 768px) {
+    width: 550px;
+    height: 216px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 452px;
+    height: 260px;
+  }
+}
+
+.instruction-list li {
+  width: 291px;
+  color: #111;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+
+  @media screen and (min-width: 768px) {
+    width: 464px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 436px;
+  }
+}
+
+.instruction-list br {
+  display: none;
+}
+
+.prod.section {
+  padding-top: 72px;
+}
+
+.our-products .section-header {
+  margin-bottom: 0;
+}
+
+.our-products.container {
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 32px;
+  }
+}
+
+.chocolates {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 364px;
+  flex-shrink: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+  }
+}
+
+.myswiper {
+  padding: 50px 0;
+}
+
+.choco_img {
+  margin-top: 32px;
+}
+
+.chocolates .chocolates-flavor {
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 270px;
+  }
+}
+
+.chocolates-flavor {
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+}
+
+.chocolates .flavor {
+  color: #111;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.chocolates .variety {
+  color: rgba(17, 17, 17, 0.7);
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.24px;
+  padding-bottom: 18px;
+}
+
+.chocolates .price {
+  color: #111;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-style: normal;
+  width: 94px;
+  font-weight: 600;
+  line-height: normal;
+
+  padding: 8px 20px;
+  gap: 14px;
+
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fafafa;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 28px;
+  border-radius: 25px;
+  background-color: #fd9222;
+}
