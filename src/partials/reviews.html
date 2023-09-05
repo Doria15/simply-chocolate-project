@@ -1,0 +1,214 @@
+<!--REVIEWS SECTION-->
+<section class="reviews-section section">
+  <!--SECTION HEADER-->
+  <h3 class="header"><span class="header-span">CHOCOLATE</span> IS LOVED</h3>
+
+  <!--CUSTOMER REVIEWS-->
+  <div class="slide-container">
+    <ul class="reviews-list list">
+      <li class="reviews-list-item">
+        <div class="reviewer-card">
+          <div class="thumb">
+            <img
+              srcset="/src/images/reviewer1.jpeg x1, /src/images/reviewer1@2x.jpg x2"
+              src="/src/images/reviewer1.jpeg"
+              alt="Victoria Dobrzhanska"
+              width="80"
+              height="80"
+              class="thumb-image"
+            />
+          </div>
+          <h4 class="reviews-item-name">Victoria Dobrzhanska</h4>
+        </div>
+        <p class="description">
+          I love this chocolate bar. Perfect combination<br />of light crispy
+          wafer, covered in a thin layer<br />chocolate.
+        </p>
+      </li>
+      <li class="reviews-list-item">
+        <div class="reviewer-card">
+          <div class="thumb img">
+            <img
+              srcset="/src/images/reviewer2.jpeg x1, /src/images/reviewer2@2x.jpg x2"
+              src="/src/images/reviewer2.jpeg"
+              alt="Nazar Babenko"
+              width="80"
+              height="80"
+              class="thumb-image"
+            />
+          </div>
+          <h4 class="reviews-item-name">Nazar Babenko</h4>
+        </div>
+        <p class="description">
+          This chocolate confection is a delight! A<br />
+          delight! The wafer is light and crisp, the<br />
+          hazelnut cream is smooth, and the chocolate<br />
+          is good.
+        </p>
+      </li>
+      <li class="reviews-list-item">
+        <div class="reviewer-card">
+          <div class="thumb">
+            <img
+              srcset="/src/images/reviewer3.jpeg x3, /src/images/reviewer3@2x.jpg x2"
+              src="/src/images/reviewer3.jpeg"
+              alt="Olena Kampusch"
+              width="80"
+              height="80"
+              class="thumb-image"
+            />
+          </div>
+          <h4 class="reviews-item-name">Olena Kampusch</h4>
+        </div>
+        <p class="description">
+          Chocolate is a family favourite treat. Love the<br />
+          delicious smooth chocolate and the<br />
+          creaminess inside. The wafer is soft but<br />
+          crunchy.
+        </p>
+      </li>
+      <!--<li class="reviews-list-item">
+        <div class="reviewer-card">
+          <div class="thumb">
+            <img
+              srcset="/src/images/reviewer4.jpeg x1, /src/images/reviewer4@2x.jpg x2"
+              src="/src/images/reviewer4.jpeg"
+              alt="Natalia Sus"
+              width="80"
+              height="80"
+              class="thumb-image"
+            />
+          </div>
+          <h4 class="reviews-item-name">Natalia Sus</h4>
+        </div>
+        <p class="description">
+          The chocolate assortment was delicious. Both<br />
+          dark and milk chocolate pieces were smooth<br />
+          and just right on the sweetness level.
+        </p>
+      </li>
+      <li class="reviews-list-item">
+        <div class="reviewer-card">
+          <div class="thumb">
+            <img
+              srcset="/src/images/reviewer5.jpeg x1, /src/images/reviewer5@2x.jpg x2"
+              src="/src/images/reviewer5.jpeg"
+              alt="Danilo Nottingham"
+              width="80"
+              height="80"
+              class="thumb-image"
+            />
+          </div>
+          <h4 class="reviews-item-name">Danilo Nottingham</h4>
+        </div>
+        <p class="description">
+          This is delicious. It so rich and flavorful you<br />
+          don’t need to use as many. I love topping an<br />
+          apple with almond butter and these chips for<br />
+          a snack.
+        </p>
+      </li>
+      <li class="reviews-list-item swiper-slide">
+        <div class="reviewer-card">
+          <div class="thumb">
+            <img
+              srcset="/src/images/reviewer6.jpg x1, /src/images/reviewer6@2x.jpg x2"
+              src="/src/images/reviewer6.jpg"
+              alt="Irina Tydnyuk"
+              width="80"
+              height="80"
+              class="thumb-image"
+            />
+          </div>
+          <h4 class="reviews-item-name">Irina Tydnyuk</h4>
+        </div>
+        <p class="description">
+          This is simply the best chocolate around, and<br />
+          I'm just thrilled to support a local company!<br />
+          Best local chocolate - world class :)
+        </p>
+      </li>-->
+    </ul>
+  </div>
+
+  <!--Button-->
+  <button type="button" class="reviews-button button" data-modal-open>
+    Leave a review
+  </button>
+</section>
+
+<!--REVIEWS-MODAL-->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-close" type="button" data-modal-close>
+      <svg class="modal-close-icon" width="28" height="28">
+        <use href="./images/reviews-icons.svg#close-icon"></use>
+      </svg>
+    </button>
+
+    MODAL CONTENTS-->
+    <p class="modal-title">
+      LEAVE A REVIEW <br class="break" />
+      ABOUT <br class="break2" />
+      <span class="modal-title-span">OUR CHOCOLATE</span>
+    </p>
+    <form class="form" name="modal-form">
+      <!--Name-->
+      <label class="form-field">
+        <input
+          class="form-input"
+          type="text"
+          name="user-name"
+          placeholder="Name"
+          required
+        />
+      </label>
+
+      <!--Email-->
+      <label class="form-field">
+        <input
+          class="form-input"
+          type="email"
+          name="user-email"
+          placeholder="Email"
+          required
+        />
+      </label>
+
+      <!--Phone-->
+      <label class="form-field">
+        <div class="phone-container">
+          <svg class="flag-icon">
+            <use
+              href="./images/reviews-icons.svg#flag-icon"
+              width="32"
+              height="24"
+            ></use>
+          </svg>
+          <p class="area-code">+380</p>
+        </div>
+        <input
+          class="form-input-phone"
+          type="tel"
+          name="user-phone"
+          placeholder="Phone Number"
+          required
+        />
+      </label>
+
+      <!--Comments-->
+      <label class="form-field">
+        <textarea
+          class="form-textarea"
+          name="user-feedback"
+          rows="8"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+
+      <!--Form Button-->
+
+      <button class="button-forms button" type="submit">Send</button>
+    </form>
+  </div>
+</div>

@@ -26,11 +26,31 @@
     <include src="./partials/hero.html"></include>
     <include src="./partials/products.html"></include>
     <include src="./partials/best-seller.html"></include>
+    <include src="./partials/reviews.html"></include>
 
     <script defer src="./mobile-menu.js"></script>
     <script src="./best-seller.js"></script>
+    <!--REVIEWS-MODAL SCRIPT-->
+    <script src="./reviews-modal.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="products-slider.js"></script>
+
+    <!--REVIEWS-SLIDER SCRIPT-->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

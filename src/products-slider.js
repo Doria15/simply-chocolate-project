@@ -1,8 +1,8 @@
-var swiper = new Swiper(".myswiper", {
+var swiper = new Swiper('.myswiper', {
   slidesPerView: 5,
   spaceBetween: 18,
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
   breakpoints: {
