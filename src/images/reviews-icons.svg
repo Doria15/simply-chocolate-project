@@ -1,0 +1,17 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0" xmlns="http://www.w3.org/2000/svg" overflow="hidden">
+    <defs>
+
+    <!--Close Icon-->
+    <symbol id="close-icon" viewBox="0 0 28 28" >
+    <path d="M21 7L7 21" />
+    <path d="M7 7L21 21"/>
+    </symbol>
+
+    <!--Flag Icon-->
+    <symbol id="flag-icon" viewBox="0 0 32 25">
+    <path d="M31.8319 1.05835H0.242798V24.5665H31.8319V1.05835Z" fill="#FFD700"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.242798 1.05835H31.8319V12.8124H0.242798V1.05835Z" fill="#0057B7"/>
+    </symbol>
+
+    </defs>
+</svg>
