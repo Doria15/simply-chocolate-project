@@ -1,0 +1,161 @@
+<section>
+  <div class="container">
+    <div class="top-sellers section">
+      <p class="top-sell">
+        <span class="top">TOP</span> <span class="seller">SELLERS</span>
+      </p>
+      <ul class="choco list">
+        <div>
+          <li class="item">
+            <img src="./images/c1-m.jpg" alt="chocolate-1" />
+          </li>
+          <p class="description">
+            Crazy enough chocolate originates from a bean just like the coffee
+            bean called Cacao. Cacao has been around for thousands of years and
+            was first discovered by the Native American tribe called the Mayans.
+          </p>
+        </div>
+        <div>
+          <li class="item">
+            <img src="./images/c2-d.jpg" alt="chocolate-2" />
+          </li>
+        </div>
+        <div>
+          <li class="item">
+            <img src="./images/c3-d.jpg" alt="chocolate-3" />
+          </li>
+          <div class="des-btn">
+            <!-- modal open button -->
+            <div class="btn">
+              <button class="buy-btn" type="button" data-modal-open>
+                Buy now
+              </button>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="close-icon" width="24px" height="24px">
+            <use href="./images/best-seller-icon.svg#close-btn></use>
+          </svg>
+        </button>
+
+        <!-- modal details -->
+        <p class="buy-now">
+          <span class="buy">BUY</span> <span class="now">NOW</span>
+        </p>
+        <ul class="buy-choco list">
+          <li class="item">
+            <img
+              src="./images/mc-1.png"
+              alt="buy-1"
+              width="84px"
+              height="69px"
+              class="image"
+            />
+            <button class="buy-btn-m" type="button">100 g</button>
+          </li>
+          <li class="item">
+            <img
+              src="./images/mc-2.png"
+              alt="buy-2"
+              width="84px"
+              height="69px"
+              class="image"
+            />
+            <button class="buy-btn-m" type="button">200 g</button>
+          </li>
+          <li class="item">
+            <img
+              src="./images/mc-3.png"
+              alt="buy-3"
+              width="84px"
+              height="69px"
+              class="image"
+            />
+            <button class="buy-btn-m" type="button">300 g</button>
+          </li>
+        </ul>
+        <form name="form-info" class="modal-form">
+          <label class="form-field">
+            <span class="form-label">Personal Information</span>
+            <div class="name-surname">
+              <div class="names">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="names">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-surname"
+                  placeholder="Surname"
+                />
+              </div>
+            </div>
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">Email</span>
+            <input
+              class="form-input"
+              type="text"
+              name="user-email"
+              placeholder="Enter your email"
+            />
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">Phone number</span>
+            <input
+              class="form-input"
+              type="text"
+              name="user-phone-number"
+              placeholder="Phone number"
+            />
+
+            <svg class="icon" width="32px" height="24px">
+              <use href="./images/best-seller-icon.svg#flag-icon"></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">Card number</span>
+            <input
+              class="form-input"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{13,19}"
+              autocomplete="cc-number"
+              maxlength="19"
+              placeholder="Enter card"
+            />
+            <svg class="master-icon" width="32px" height="20px">
+              <use href="./images/best-seller-icon.svg#visa-icon"></use>
+            </svg>
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">Comment</span>
+            <textarea
+              rows="4"
+              name="feedback"
+              class="form-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+        </form>
+
+        <button class="buy-btn submit" type="submit">Submit</button>
+      </div>
+    </div>
+  </div>
+</section>
