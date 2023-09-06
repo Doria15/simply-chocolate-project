@@ -2,6 +2,7 @@
 .reviews-section {
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 72px;
 
   @media screen and (min-width: 768px) {
     margin-left: 32px;
@@ -10,7 +11,8 @@
 }
 
 /* REVIEWS SECTION HEADER */
-.header {
+
+.reviews-section-header {
   text-align: center;
   font-size: 20px;
   font-style: normal;
@@ -19,6 +21,7 @@
   letter-spacing: -0.6px;
   text-transform: uppercase;
   margin-bottom: 82px;
+  padding-left: 10px;
 
   @media screen and (min-width: 768px) {
     /*text-align: center;*/
@@ -32,7 +35,7 @@
   }
 }
 
-.header-span {
+.reviews-header-span {
   color: #fd9222;
 }
 
@@ -40,6 +43,7 @@
 .reviews-list {
   display: flex;
   /*margin-top: 32px;*/
+  margin-left: -8px;
   margin-bottom: 32px;
   gap: 28px;
   /*align-items: center;*/
@@ -47,6 +51,7 @@
   @media screen and (min-width: 768px) {
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-left: -15px;
     width: 463px;
     gap: 25px;
   }
@@ -55,9 +60,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /*width: 100%;*/
     width: 1136px;
     gap: 28px;
-    padding-left: 112px;
+    margin-left: 120px;
   }
 }
 
@@ -70,7 +76,11 @@
   display: block;
   position: absolute;
   bottom: 105px;
-  left: 102px;
+  left: 82px;
+
+  @media screen and (min-width: 768px) {
+    left: 94px;
+  }
 }
 
 .thumb {
@@ -132,7 +142,7 @@
 .reviews-button {
   width: 165px;
   height: 41px;
-  margin: 0 105px;
+  margin: 0 80px;
   padding: 12px 28px;
   font-size: 14px;
   font-style: normal;
@@ -148,7 +158,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
-    margin: 0 273px;
+    margin: 0 245px;
     /*margin-left: 489px;*/
     width: 222px;
     height: 50px;
@@ -168,7 +178,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 510px;
+    margin-left: 550px;
   }
 }
 
@@ -195,7 +205,7 @@
 }
 
 /* MODAL SECTION */
-.modal {
+.reviews-modal {
   padding: 32px 24px 32px;
   position: absolute;
   top: 50%;
@@ -221,11 +231,11 @@
   }
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .reviews-modal {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.modal-close {
+.reviews-modal-close {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -248,7 +258,7 @@
   }
 }
 
-.modal-close-icon {
+.reviews-modal-close-icon {
   stroke-width: 2px;
   stroke: #111111;
   stroke-linecap: round;
@@ -257,13 +267,13 @@
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
+.reviews-modal-close-icon:hover,
+.reviews-modal-close-icon:focus {
   stroke: #fd9222;
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.reviews-modal-close:hover,
+.reviews-modal-close:focus {
   stroke: #fd9222;
 }
 /*.modal-close:hover,
@@ -279,7 +289,7 @@
 
 /* MODAL CONTENTS */
 
-.modal-title {
+.reviews-modal-title {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -302,16 +312,16 @@
   }
 }
 
-.modal-title-span {
+.reviews-modal-title-span {
   color: #fd9222;
 }
 
-.form {
+.reviews-form {
   margin-top: 40px;
   /*margin-right: 40px;*/
 }
 
-.form-field {
+.reviews-form-field {
   position: relative;
   display: flex;
   margin-bottom: 18px;
@@ -323,7 +333,7 @@
   color: rgba(64, 64, 64, 0.3);
 }
 
-.form-input {
+.reviews-form-input {
   display: block;
   width: 100%;
   height: 45px;
@@ -369,7 +379,7 @@
   }
 }
 
-.form-textarea {
+.reviews-form-textarea {
   width: 100%;
   height: 91px;
   padding-top: 14px;
@@ -395,12 +405,12 @@
   }
 }
 
-.form-input:hover,
-.form-input:focus,
+.reviews-form-input:hover,
+.reviews-form-input:focus,
 .form-input-phone:hover,
 .form-input-phone:focus,
-.form-textarea:hover,
-.form-textarea:focus {
+.reviews-form-textarea:hover,
+.reviews-form-textarea:focus {
   outline: none;
   border-color: #fd9222;
 }
@@ -467,7 +477,7 @@
   }
 }
 
-.button-forms {
+.reviews-button-forms {
   display: block;
   border: 1px solid #fd9222;
   border-radius: 100px;
@@ -483,8 +493,8 @@
   transition: background 25ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-forms:hover,
-.button-forms:focus {
+.reviews-button-forms:hover,
+.reviews-button-forms:focus {
   background-color: #fcf1e0;
   color: #fd9222;
 }
