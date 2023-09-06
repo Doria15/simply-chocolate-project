@@ -1,7 +1,9 @@
 <!--REVIEWS SECTION-->
 <section class="reviews-section section">
   <!--SECTION HEADER-->
-  <h3 class="header"><span class="header-span">CHOCOLATE</span> IS LOVED</h3>
+  <h3 class="reviews-section-header">
+    <span class="reviews-header-span">CHOCOLATE</span> IS LOVED
+  </h3>
 
   <!--CUSTOMER REVIEWS-->
   <div class="slide-container">
@@ -132,31 +134,31 @@
   </div>
 
   <!--Button-->
-  <button type="button" class="reviews-button button" data-modal-open>
+  <button type="button" class="reviews-button button" reviews-modal-open>
     Leave a review
   </button>
 </section>
 
 <!--REVIEWS-MODAL-->
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal-close" type="button" data-modal-close>
-      <svg class="modal-close-icon" width="28" height="28">
+<div class="backdrop is-hidden" reviews-data-modal>
+  <div class="reviews-modal">
+    <button class="reviews-modal-close" type="button" reviews-modal-close>
+      <svg class="reviews-modal-close-icon" width="28" height="28">
         <use href="./images/reviews-icons.svg#close-icon"></use>
       </svg>
     </button>
 
-    MODAL CONTENTS-->
-    <p class="modal-title">
+    <!--MODAL CONTENTS-->
+    <p class="reviews-modal-title">
       LEAVE A REVIEW <br class="break" />
       ABOUT <br class="break2" />
       <span class="modal-title-span">OUR CHOCOLATE</span>
     </p>
-    <form class="form" name="modal-form">
+    <form class="reviews-form" name="reviews-modal-form">
       <!--Name-->
-      <label class="form-field">
+      <label class="reviews-form-field">
         <input
-          class="form-input"
+          class="reviews-form-input"
           type="text"
           name="user-name"
           placeholder="Name"
@@ -165,9 +167,9 @@
       </label>
 
       <!--Email-->
-      <label class="form-field">
+      <label class="reviews-form-field">
         <input
-          class="form-input"
+          class="reviews-form-input"
           type="email"
           name="user-email"
           placeholder="Email"
@@ -176,7 +178,7 @@
       </label>
 
       <!--Phone-->
-      <label class="form-field">
+      <label class="reviews-form-field">
         <div class="phone-container">
           <svg class="flag-icon">
             <use
@@ -197,9 +199,9 @@
       </label>
 
       <!--Comments-->
-      <label class="form-field">
+      <label class="reviews-form-field">
         <textarea
-          class="form-textarea"
+          class="reviews-form-textarea"
           name="user-feedback"
           rows="8"
           placeholder="Enter text"
@@ -208,7 +210,7 @@
 
       <!--Form Button-->
 
-      <button class="button-forms button" type="submit">Send</button>
+      <button class="reviews-button-forms button" type="submit">Send</button>
     </form>
   </div>
 </div>
