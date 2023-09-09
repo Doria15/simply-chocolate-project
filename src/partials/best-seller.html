@@ -1,112 +1,183 @@
-<section>
-  <div class="best-seller-container" id="top-sellers" data-aos="fade-left" data-aos-delay="700" data-aos-offset="200"
-    data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true">
-    <div class="best-seller-top-sellers best-seller-section">
-      <p class="best-seller-top-sell">
-        <span class="best-seller-top">TOP</span> <span class="seller">SELLERS</span>
+<section class="best-seller-top-sellers section">
+  <div
+    class="best-seller-container container"
+    id="top-sellers"
+    data-aos="fade-left"
+    data-aos-delay="700"
+    data-aos-offset="200"
+    data-aos-duration="1500"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="false"
+    data-aos-once="true"
+  >
+    <h2 class="best-seller-top-sell">
+      <span class="best-seller-top">TOP</span>
+      <span class="best-seller-sellers">SELLERS</span>
+    </h2>
+    <ul class="best-seller-choco list">
+      <li class="best-seller-item">
+        <img
+          class="best-seller-img"
+          src="./images/c1-d.jpg"
+          alt="chocolate-1"
+        />
+      </li>
+
+      <li class="best-seller-item">
+        <img
+          class="best-seller-img"
+          src="./images/c2-d.jpg"
+          alt="chocolate-2"
+        />
+      </li>
+
+      <li class="best-seller-item">
+        <img
+          class="best-seller-img"
+          src="./images/c3-d.jpg"
+          alt="chocolate-3"
+        />
+      </li>
+    </ul>
+    <div class="best-seller-text-button">
+      <p class="best-seller-description">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
       </p>
-      <ul class="best-seller-choco list">
-        <div>
-          <li class="best-seller-item">
-            <img src="./images/c1-d.jpg" alt="chocolate-1" />
-          </li>
-          <p class="best-seller-description">
-            Crazy enough chocolate originates from a bean just like the coffee
-            bean called Cacao. Cacao has been around for thousands of years and
-            was first discovered by the Native American tribe called the Mayans.
-          </p>
-        </div>
-        <div>
-          <li class="best-seller-item">
-            <img src="./images/c2-d.jpg" alt="chocolate-2" />
-          </li>
-        </div>
-        <div>
-          <li class="best-seller-item">
-            <img src="./images/c3-d.jpg" alt="chocolate-3" />
-          </li>
-          <div class="des-btn">
-            <!-- modal open button -->
-            <div class="best-seller-btn">
-              <button class="best-seller-buy-btn" type="button" best-seller-data-modal-open>
-                Buy now
-              </button>
-            </div>
-          </div>
-        </div>
-      </ul>
-    </div>
-
-    <div class="best-seller-backdrop is-hidden" best-seller-data-modal>
-      <div class="best-seller-modal">
-        <button class="best-seller-modal-close" type="button" best-seller-data-modal-close>
-          <svg class="best-seller-close-icon" width="24px" height="24px">
-            <use href="./images/best-seller-icon.svg#best-seller-close-btn></use>
-          </svg>
-        </button>
-
-        <!-- modal details -->
-        <p class=" best-seller-buy-now">
-              <span class="best-seller-buy">BUY</span> <span class="now">NOW</span>
-              </p>
-              <ul class="best-seller-buy-choco list">
-                <li class="best-seller-item">
-                  <img src="./images/mc-1.png" alt="buy-1" width="84px" height="69px" class="best-seller-image" />
-                  <button class="best-seller-buy-btn-m" type="button">100 g</button>
-                </li>
-                <li class="best-seller-item">
-                  <img src="./images/mc-2.png" alt="buy-2" width="84px" height="69px" class="best-seller-image" />
-                  <button class="buy-btn-m" type="button">200 g</button>
-                </li>
-                <li class="best-seller-item">
-                  <img src="./images/mc-3.png" alt="buy-3" width="84px" height="69px" class="best-seller-image" />
-                  <button class="buy-btn-m" type="button">300 g</button>
-                </li>
-              </ul>
-              <form name="form-info" class="best-seller-modal-form">
-                <label class="best-seller-form-field">
-                  <span class="best-seller-form-label">Personal Information</span>
-                  <div class="best-seller-name-surname">
-                    <div class="best-seller-names">
-                      <input class="form-input" type="text" name="user-name" placeholder="Name" />
-                    </div>
-                    <div class="best-seller-names">
-                      <input class="form-input" type="text" name="user-surname" placeholder="Surname" />
-                    </div>
-                  </div>
-                </label>
-
-                <label class="best-seller-form-field">
-                  <span class="best-seller-form-label">Email</span>
-                  <input class="form-input" type="text" name="user-email" placeholder="Enter your email" />
-                </label>
-
-                <label class="best-seller-form-field">
-                  <span class="best-seller-form-label">Phone number</span>
-                  <input class="form-input" type="text" name="user-phone-number" placeholder="Phone number" />
-
-                  <svg class="best-seller-icon" width="32px" height="24px">
-                    <use href="./images/best-seller-icon.svg#flag-icon"></use>
-                  </svg>
-                </label>
-
-                <label class="best-seller-form-field">
-                  <span class="best-seller-form-label">Card number</span>
-                  <input class="form-input" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
-                    autocomplete="cc-number" maxlength="19" placeholder="Enter card" />
-                  <svg class="master-icon" width="32px" height="20px">
-                    <use href="./images/best-seller-icon.svg#visa-icon"></use>
-                  </svg>
-                </label>
-
-                <label class="best-seller-form-field">
-                  <span class="best-seller-form-label">Comment</span>
-                  <textarea rows="4" name="feedback" class="form-textarea" placeholder="Text input"></textarea>
-                </label>
-              </form>
-
-              <button class="best-seller-buy-btn submit" type="submit">Submit</button>
-      </div>
+      <button
+        class="best-seller-buy-btn"
+        type="button"
+        best-seller-data-modal-open
+      >
+        Buy now
+      </button>
     </div>
   </div>
 </section>
+
+<div class="best-seller-backdrop is-hidden" best-seller-data-modal>
+  <div class="best-seller-modal modal">
+    <button
+      type="button"
+      class="best-seller-modal-close"
+      best-seller-data-modal-close
+    >
+      <svg class="modal-close-icon" width="20" height="20">
+        <use href="./images/best-seller-icon.svg#close-btn"></use>
+      </svg>
+    </button>
+    <p class="best-seller-header-text">
+      <span class="best-seller-buy">BUY</span> NOW
+    </p>
+    <ul class="best-seller-buy-choco list">
+      <li class="modal-best-seller-item">
+        <img
+          src="./images/mc-1.png"
+          alt="buy-1"
+          width="84px"
+          height="69px"
+          class="best-seller-image"
+        />
+        <button class="buy-btn-m" type="button">100 g</button>
+      </li>
+      <li class="modal-best-seller-item">
+        <img
+          src="./images/mc-2.png"
+          alt="buy-2"
+          width="84px"
+          height="69px"
+          class="best-seller-image"
+        />
+        <button class="buy-btn-m" type="button">200 g</button>
+      </li>
+      <li class="modal-best-seller-item">
+        <img
+          src="./images/mc-3.png"
+          alt="buy-3"
+          width="84px"
+          height="69px"
+          class="best-seller-image"
+        />
+        <button class="buy-btn-m" type="button">300 g</button>
+      </li>
+    </ul>
+    <form name="form-info" class="best-seller-modal-form">
+      <label class="best-seller-form-field">
+        <span class="best-seller-form-label">Personal Information</span>
+        <div class="best-seller-name-surname">
+          <div class="best-seller-names">
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="best-seller-names">
+            <input
+              class="form-input"
+              type="text"
+              name="user-surname"
+              placeholder="Surname"
+            />
+          </div>
+        </div>
+      </label>
+
+      <label class="best-seller-form-field">
+        <span class="best-seller-form-label">Email</span>
+        <input
+          class="form-input"
+          type="text"
+          name="user-email"
+          placeholder="Enter your email"
+        />
+      </label>
+
+      <label class="best-seller-form-field">
+        <div class="country-code">
+          <span class="country-code-text">+380</span>
+          <svg class="best-seller-icon" width="32px" height="24px">
+            <use href="./images/best-seller-icon.svg#flag-icon"></use>
+          </svg>
+        </div>
+        <span class="best-seller-form-label">Phone number</span>
+        <input
+          class="form-input phone-number"
+          type="text"
+          name="user-phone-number"
+          placeholder="Phone number"
+        />
+      </label>
+
+      <label class="best-seller-form-field">
+        <span class="best-seller-form-label">Card number</span>
+        <input
+          class="form-input"
+          type="tel"
+          inputmode="numeric"
+          pattern="[0-9\s]{13,19}"
+          autocomplete="cc-number"
+          maxlength="19"
+          placeholder="Enter card"
+        />
+        <svg class="master-icon" width="32px" height="20px">
+          <use href="./images/best-seller-icon.svg#visa-icon"></use>
+        </svg>
+      </label>
+
+      <label class="best-seller-form-field">
+        <span class="best-seller-form-label">Comment</span>
+        <textarea
+          rows="4"
+          name="feedback"
+          class="form-textarea"
+          placeholder="Text input"
+        ></textarea>
+      </label>
+    </form>
+
+    <button class="best-seller-modal-btn" type="submit">Submit</button>
+  </div>
+</div>

@@ -1,30 +1,162 @@
 <section class="hero-section section">
-    <div class="hero-container container">
-        <h1 class="hero-title">
-            Treat yourself or a loved one<br />
-            to our finest ingredients for a<br />
-            moment of pure delight!
-        </h1>
+  <div class="hero-container container">
+    <h1 class="hero-title">
+      Treat yourself or a loved one<br />
+      to our finest ingredients for a<br />
+      moment of pure delight!
+    </h1>
 
-        <div class="hero-content">
-            <div class="hero-buttons">
-                <button type="button" class="button primary" data-modal-open>
-                    Buy Now
-                </button>
-                <a class="made-link link" href="#how-its-made" rel="noreferrer noopener" title="how-its-made">
-                    <button type="button" class="made-button button">
-                        How it's made
-                    </button>
-                </a>
-            </div>
-            <div class="scroll-content">
-                <a class="scroll-link link" href="#footer" rel="noreferrer noopener" title="how-its-made">
-                    scroll down
-                    <svg class="scroll-button-icon" width="22" height="22">
-                        <use href="./images/hero-icons.svg#icon-scroll"></use>
-                    </svg>
-                </a>
-            </div>
-        </div>
+    <div class="hero-content">
+      <div class="hero-buttons">
+        <button type="button" class="button primary" hero-data-modal-open>
+          Buy Now
+        </button>
+        <a
+          class="made-link link"
+          href="#how-its-made"
+          rel="noreferrer noopener"
+          title="how-its-made"
+        >
+          <button type="button" class="made-button button">
+            How it's made
+          </button>
+        </a>
+      </div>
+      <div class="scroll-content">
+        <a
+          class="scroll-link link"
+          href="#footer"
+          rel="noreferrer noopener"
+          title="how-its-made"
+        >
+          scroll down
+          <svg class="scroll-button-icon" width="22" height="22">
+            <use href="./images/hero-icons.svg#icon-scroll"></use>
+          </svg>
+        </a>
+      </div>
     </div>
+  </div>
 </section>
+
+<div class="best-seller-backdrop is-hidden" hero-data-modal>
+  <div class="best-seller-modal modal">
+    <button type="button" class="best-seller-modal-close" hero-data-modal-close>
+      <svg class="modal-close-icon" width="20" height="20">
+        <use href="./images/best-seller-icon.svg#close-btn"></use>
+      </svg>
+    </button>
+    <p class="best-seller-header-text">
+      <span class="best-seller-buy">BUY</span> NOW
+    </p>
+    <ul class="best-seller-buy-choco list">
+      <li class="modal-best-seller-item">
+        <img
+          src="./images/mc-1.png"
+          alt="buy-1"
+          width="84px"
+          height="69px"
+          class="best-seller-image"
+        />
+        <button class="buy-btn-m" type="button">100 g</button>
+      </li>
+      <li class="modal-best-seller-item">
+        <img
+          src="./images/mc-2.png"
+          alt="buy-2"
+          width="84px"
+          height="69px"
+          class="best-seller-image"
+        />
+        <button class="buy-btn-m" type="button">200 g</button>
+      </li>
+      <li class="modal-best-seller-item">
+        <img
+          src="./images/mc-3.png"
+          alt="buy-3"
+          width="84px"
+          height="69px"
+          class="best-seller-image"
+        />
+        <button class="buy-btn-m" type="button">300 g</button>
+      </li>
+    </ul>
+    <form name="form-info" class="best-seller-modal-form">
+      <label class="best-seller-form-field">
+        <span class="best-seller-form-label">Personal Information</span>
+        <div class="best-seller-name-surname">
+          <div class="best-seller-names">
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="best-seller-names">
+            <input
+              class="form-input"
+              type="text"
+              name="user-surname"
+              placeholder="Surname"
+            />
+          </div>
+        </div>
+      </label>
+
+      <label class="best-seller-form-field">
+        <span class="best-seller-form-label">Email</span>
+        <input
+          class="form-input"
+          type="text"
+          name="user-email"
+          placeholder="Enter your email"
+        />
+      </label>
+
+      <label class="best-seller-form-field">
+        <div class="country-code">
+          <span class="country-code-text">+380</span>
+          <svg class="best-seller-icon" width="32px" height="24px">
+            <use href="./images/best-seller-icon.svg#flag-icon"></use>
+          </svg>
+        </div>
+        <span class="best-seller-form-label">Phone number</span>
+        <input
+          class="form-input phone-number"
+          type="text"
+          name="user-phone-number"
+          placeholder="Phone number"
+        />
+      </label>
+
+      <label class="best-seller-form-field">
+        <span class="best-seller-form-label">Card number</span>
+        <input
+          class="form-input"
+          type="tel"
+          inputmode="numeric"
+          pattern="[0-9\s]{13,19}"
+          autocomplete="cc-number"
+          maxlength="19"
+          placeholder="Enter card"
+        />
+        <svg class="master-icon" width="32px" height="20px">
+          <use href="./images/best-seller-icon.svg#visa-icon"></use>
+        </svg>
+      </label>
+
+      <label class="best-seller-form-field">
+        <span class="best-seller-form-label">Comment</span>
+        <textarea
+          rows="4"
+          name="feedback"
+          class="form-textarea"
+          placeholder="Text input"
+        ></textarea>
+      </label>
+    </form>
+
+    <button class="best-seller-modal-btn" type="submit">Submit</button>
+  </div>
+</div>

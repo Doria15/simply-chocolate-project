@@ -176,6 +176,7 @@
   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
+    gap: 32px;
     flex-wrap: wrap;
   }
 
@@ -188,7 +189,7 @@
 .orange-title {
   background-color: #fd9222;
   height: 19px;
-  padding: 6px 16px 6px;
+  padding: 6px 16px;
   font-size: 10px;
   line-height: 12px;
   font-weight: 400;
@@ -203,7 +204,7 @@
 .white-title {
   background-color: white;
   height: 19px;
-  padding: 6px 16px 6px;
+  padding: 6px 16px;
   font-size: 10px;
   line-height: 12px;
   font-weight: 400;
