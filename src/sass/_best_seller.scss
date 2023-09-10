@@ -47,6 +47,12 @@
   text-transform: uppercase;
 }
 
+.best-seller-text-button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .best-seller-description {
   color: #111;
   font-family: Montserrat;
@@ -55,12 +61,27 @@
   font-weight: 400;
   line-height: 18px; /* 128.571% */
   letter-spacing: -0.28px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    width: 309px;
+    display: inline-block;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 407px;
+    margin-left: 20px;
+    display: inline-block;
+  }
 }
 
 .best-seller-choco {
-  display: block;
+  padding-top: 32px;
+  padding-bottom: 20px;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -69,7 +90,6 @@
     flex-direction: row;
     gap: 16px;
   }
-
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
@@ -83,12 +103,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 20px;
+  flex-direction: column;
 }
 
 .best-seller-img {
   border-radius: 15px;
+}
+
+.best-seller-item-text {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+  margin-top: 32px;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .best-seller-item:last-child {
@@ -96,23 +131,6 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-  }
-}
-
-.best-seller-text-button {
-  display: block;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 236px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 20px;
-    margin-right: 20px;
-    gap: 567px;
   }
 }
 
@@ -131,9 +149,12 @@
   transition: color background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline;
+    margin-left: 236px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline;
+    margin-left: 567px;
   }
 }
 
@@ -150,7 +171,9 @@
   top: 50%;
   left: 50%;
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
   padding: 0 24px 24px 24px;
   border-radius: 4px;
   background-color: var(--dwhite);
@@ -163,13 +186,15 @@
   }
 
   @media screen and (min-width: 768px) {
-    min-width: 408px;
-    transform: translate(-50%, -50%) scale(0.5);
+    max-height: 100vh;
+    overflow-y: auto;
+    width: 609px;
   }
 
   @media screen and (min-width: 1200px) {
+    max-height: 100vh;
+    overflow-y: auto;
     width: 609px;
-    transform: translate(-50%, -50%) scale(0.6);
   }
 }
 
@@ -234,9 +259,10 @@
 /* chocolate buys */
 .best-seller-buy-choco {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 24px;
   margin-left: 48.5px;
   margin-right: 48.5px;
 
@@ -244,6 +270,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     gap: 16px;
     margin-left: 48.5px;
     margin-right: 48.5px;
@@ -253,21 +280,28 @@
 .modal-best-seller-item {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
   gap: 77px;
   width: 100%;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     width: 160px;
     padding: 24px 20px 18px 20px;
-    flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
     gap: 14px;
-    border-radius: 15px;
-    border: 1px solid rgba(17, 17, 17, 0.1);
-    background: #fff;
+  }
+}
+
+.best-seller-image {
+  @media screen and (min-width: 375px) {
   }
 }
 
@@ -316,10 +350,10 @@
   font-family: inherit;
   margin: 0 0 10px 0;
   padding: 14px 18px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 0.87px;
   letter-spacing: 0.01em;
-  color: #4040404d;
+  color: var(--black);
   font-weight: 400;
   line-height: normal;
   border-radius: 8px;
@@ -365,8 +399,24 @@
   letter-spacing: -0.36px;
 }
 
-.phone-number::placeholder {
+.form-input,
+.form-textarea {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover,
+.form-input:focus,
+.form-textarea:hover,
+.form-textarea:focus {
+  border: 2px solid var(--orange);
+}
+
+.form-input.phone-number {
   padding-left: 120px;
+}
+
+.form-textarea {
+  resize: none;
 }
 
 .best-seller-form-field .form-label {
@@ -392,6 +442,8 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.36px;
+  padding-right: 10px;
+  border-right: 2px solid rgba(64, 64, 64, 0.3);
 }
 
 .master-icon {
@@ -406,6 +458,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 21px;
   }
 }
 
@@ -431,4 +484,10 @@
   margin-left: 48px;
   border-radius: 100px;
   border: none;
+}
+
+.best-seller-modal-btn:hover,
+.best-seller-modal-btn:focus {
+  color: var(--orange);
+  background-color: #fcf1e0;
 }
