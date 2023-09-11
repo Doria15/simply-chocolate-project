@@ -208,6 +208,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms ease-in-out;
+  z-index: 100;
 }
 
 .best-seller-backdrop.is-hidden .best-seller-modal {
