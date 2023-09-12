@@ -13,10 +13,10 @@
   line-height: 24px;
   letter-spacing: -0.6px;
   text-transform: uppercase;
-  margin-bottom: 78px;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -0.72px;
@@ -24,7 +24,11 @@
 }
 
 .review-container {
-  height: 442px;
+  height: 404px;
+
+  @media screen and (min-width: 768px) {
+    height: 442px;
+  }
 }
 
 .reviews-header-span {
@@ -72,15 +76,24 @@
 }
 
 .swiper-details {
-  width: 360px;
+  width: 328px;
   height: 120px;
-  padding-top: 55px;
+  margin: 0 auto;
+  padding-top: 60px;
   padding-bottom: 30px;
   flex-shrink: 0;
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fff;
   box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
+
+  @media screen and (min-width: 768px) {
+    width: 346px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+  }
 }
 
 .reviewer-name {
@@ -107,6 +120,7 @@
   display: flex;
   justify-content: center;
   height: 13px;
+  width: 107px;
   padding-top: 30px;
 }
 
