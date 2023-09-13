@@ -1,13 +1,7 @@
 /* REVIEWS SECTION */
 .reviews-section {
-  // margin-left: 20px;
-  // margin-right: 20px;
-  padding-bottom: 72px;
-
-  // @media screen and (min-width: 768px) {
-  //   margin-left: 32px;
-  //   margin-right: 32px;
-  // }
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* REVIEWS SECTION HEADER */
@@ -16,21 +10,24 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 120% */
+  line-height: 24px;
   letter-spacing: -0.6px;
   text-transform: uppercase;
-  margin-bottom: 82px;
-  padding-left: 10px;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
-    /*text-align: center;*/
     margin-bottom: 50px;
     font-size: 24px;
-    /*font-style: normal;
-    font-weight: 600;*/
     line-height: 28px;
     letter-spacing: -0.72px;
-    /*text-transform: uppercase;*/
+  }
+}
+
+.review-container {
+  height: 404px;
+
+  @media screen and (min-width: 768px) {
+    height: 442px;
   }
 }
 
@@ -38,133 +35,90 @@
   color: #fd9222;
 }
 
-/* REVIEWS */
-.reviews-list {
-  display: flex;
-  /*margin-top: 32px;*/
-  // margin-left: -8px;
-  // margin-bottom: 32px;
-  gap: 28px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  /*align-items: center;*/
-
-  @media screen and (min-width: 768px) {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    // margin-left: -15px;
-    width: 463px;
-    gap: 25px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc((100% - 56px) / 3);
-    /*width: 100%;*/
-    width: 1136px;
-    gap: 28px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    // margin-left: 120px;
-  }
+.swiper {
+  width: 100%;
+  height: 265px;
+  padding-top: 49px;
 }
 
-.reviews-list-item {
-  text-align: center;
-  position: relative;
-}
-
-.reviews-list-item:nth-child(3) {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-}
-
-.reviews-list-item:nth-child(2) {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-}
-
-.reviewer-card {
-  display: block;
-  position: absolute;
-  bottom: 105px;
-  left: 82px;
-
-  @media screen and (min-width: 768px) {
-    left: 94px;
-  }
-}
-
-.thumb {
-  border-radius: 80px;
-  width: 80px;
-  overflow: hidden;
+.swiper-wrapper {
   margin: 0 auto;
-  margin-bottom: -40px;
+  position: relative;
 }
 
-/*.reviews-comment {
-  position: relative;
-  width: 360px;
-  height: 200px;
+.swiper-slide {
+  /*width: 360px;*/
+  height: 220px;
+  padding-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.swiper-slide img {
+  /*display: block;*/
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  object-fit: cover;
+  left: 140px;
+  top: 0px;
+}
+
+.swiper-reviews {
+  /*padding-top: 5px;
+  padding-left: 7px;*/
+}
+
+.swiper-details {
+  width: 328px;
+  height: 120px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  flex-shrink: 0;
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fff;
   box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
-}*/
+  @media screen and (min-width: 768px) {
+    width: 346px;
+  }
 
-.reviews-item-name {
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+  }
+}
+
+.reviewer-name {
   color: #111;
+  text-align: center;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-  padding-bottom: 24px;
-  padding-top: 56px;
+  padding-bottom: 12px;
 }
 
-.description {
+.reviewer-comments {
   color: rgba(17, 17, 17, 0.7);
+  text-align: center;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
-  padding: 104px 18px 42px;
-  text-align: center;
+}
 
-  width: 335px;
-  height: 200px;
-  border-radius: 15px;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  background: #fff;
-  box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
-
-  @media screen and (min-width: 768px) {
-    width: 344px;
-    padding: 104px 16px 42px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 360px;
-    padding: 104px 24px 42px;
-  }
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  height: 13px;
+  width: 107px;
+  padding-top: 30px;
 }
 
 .reviews-button {
@@ -172,16 +126,13 @@
   align-items: center;
   justify-content: center;
   width: 165px;
-  height: 41px;
-  margin: 0 auto;
+  height: 38px;
+  margin: 32 auto;
   padding: 12px 28px;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  /*justify-content: center;
-  align-items: flex-start;
-  text-align: center;*/
   border-radius: 100px;
   border: 1px solid #fd9222;
   cursor: pointer;
@@ -189,27 +140,11 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
-    // margin: 0 245px;
-    /*margin-left: 489px;*/
+    margin: 53 auto;
     width: 222px;
     height: 50px;
     padding: 14px 40px;
     font-size: 18px;
-    /*font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    /*justify-content: center;
-  align-items: flex-start;
-  text-align: center;*/
-    /*border-radius: 100px;
-    border: 1px solid #fd9222;
-    cursor: pointer;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
-  }
-
-  @media screen and (min-width: 1200px) {
-    // margin-left: 550px;
   }
 }
 
@@ -218,11 +153,7 @@
   background-color: #fd9222;
   color: #fff;
 }
-
-/* REVIEWS MODAL WINDOW */
-
-/* BACKDROP */
-
+/* REVIEWS MODAL WINDOW */ /* BACKDROP */
 .backdrop {
   position: fixed;
   top: 0;
@@ -232,35 +163,27 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 100;
-
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* MODAL SECTION */
+/* MODAL SECTION*/
 .reviews-modal {
   padding: 32px 24px 32px;
   position: absolute;
   top: 50%;
   left: 50%;
+  border-radius: 15px;
   min-width: 100vw;
   min-height: 100vh;
   background-color: #fafafa;
   z-index: 1000;
-
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
-    /*position: absolute;
-    top: 50%;
-    left: 50%;*/
     padding: 40px;
     min-width: 517px;
     min-height: 628px;
-    /*background-color: #fafafa;
-
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
   }
 }
 
@@ -273,7 +196,6 @@
   top: 12px;
   right: 12px;
   padding: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,7 +204,6 @@
   background-color: #fafafa;
   border: 1px solid #fafafa;
   cursor: pointer;
-
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
@@ -309,10 +230,6 @@
 .reviews-modal-close:focus {
   stroke: #fd9222;
 }
-/*.modal-close:hover,
-.modal-close:focus {
-  fill: #fd9222;
-}*/
 
 .is-hidden {
   visibility: none;
@@ -320,8 +237,7 @@
   pointer-events: none;
 }
 
-/* MODAL CONTENTS */
-
+/* MODAL CONTENTS*/
 .reviews-modal-title {
   font-size: 24px;
   font-style: normal;
@@ -330,28 +246,23 @@
   letter-spacing: -0.72px;
   text-transform: uppercase;
 }
-
 .break {
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-
 .break2 {
   display: none;
-
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
-
 .modal-title-span {
   color: #fd9222;
 }
 
 .reviews-form {
   margin-top: 40px;
-  /*margin-right: 40px;*/
 }
 
 .reviews-form-field {
@@ -382,10 +293,6 @@
     border-radius: 13px;
     padding: 22px 24px;
     align-items: flex-start;
-    /*align-self: stretch;*/
-
-    /*border: 1.5px solid rgba(17, 17, 17, 0.05);
-    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);*/
   }
 }
 
@@ -399,19 +306,14 @@
   box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
 
   @media screen and (min-width: 768px) {
-    /*display: block;*/
     width: 100%;
     height: 66px;
     border-radius: 13px;
     padding: 21px 24px 21px 160px;
-    /*padding-left: 160px;
-    align-self: stretch;*/
-
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
   }
 }
-
 .reviews-form-textarea {
   width: 100%;
   height: 91px;
@@ -420,22 +322,37 @@
   padding-left: 18px;
   align-items: flex-start;
   resize: none;
-
   border-radius: 13px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
 
   @media screen and (min-width: 768px) {
-    /*width: 100%;*/
     height: 137px;
     padding-top: 22px;
     padding-left: 24px;
     padding-right: 24px;
-    /*align-items: flex-start;
-    resize: none;
-
-    border-radius: 13px;
-    border: 1.5px solid rgba(17, 17, 17, 0.05);*/
   }
+}
+
+.reviews-button-forms {
+  display: block;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  background-color: #fd9222;
+  padding: 14px 40px;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+
+  transition: background 25ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-button-forms:hover,
+.reviews-button-forms:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 
 .reviews-form-input:hover,
@@ -473,7 +390,6 @@
   transform: rotate(-90deg) translateY(100%);
   top: 10px;
   left: 65px;
-
   @media screen and (min-width: 768px) {
     top: 12px;
     width: 30px;
@@ -484,7 +400,6 @@
 .flag-icon {
   width: 24px;
   height: 18px;
-
   @media screen and (min-width: 768px) {
     width: 32px;
     height: 24px;
@@ -501,33 +416,6 @@
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
-    /*font-style: normal;
-    font-weight: 500;
-    line-height: normal;*/
     letter-spacing: -0.36px;
-    /*color: #000;
-    margin-left: -250px;*/
   }
-}
-
-.reviews-button-forms {
-  display: block;
-  border: 1px solid #fd9222;
-  border-radius: 100px;
-  background-color: #fd9222;
-  padding: 14px 40px;
-  color: #fff;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  cursor: pointer;
-
-  transition: background 25ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.reviews-button-forms:hover,
-.reviews-button-forms:focus {
-  background-color: #fcf1e0;
-  color: #fd9222;
 }
