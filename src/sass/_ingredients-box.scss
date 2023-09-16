@@ -2,23 +2,32 @@
 
 .chocolate-box {
   position: relative;
-  width: 270px;
+  width: 335px;
   height: 270px;
   margin: 0 auto;
   background-color: #fd9222;
   overflow: hidden;
   border-radius: 15px;
   transition: background-color 250ms ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 .chocolate-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 270px;
+  width: 100%;
   height: 270px;
   background-color: #fff;
   border-radius: 15px;
   padding: 20px 20px 20px 20px;
+  overflow-y: hidden;
 
   transform: translatey(100%);
   transition: transform 250ms ease-in-out;
@@ -36,14 +45,14 @@
   color: #111;
   margin: 0;
   font-family: inherit;
-  font-size: 12px;
+  font-size: 14px;
   width: auto 0;
   height: auto 0;
 }
 /* MILK */
 .milk-box {
   position: relative;
-  width: 270px;
+  width: 335px;
   height: 270px;
   margin: 0 auto;
   background-color: #fff;
@@ -51,16 +60,25 @@
   border-radius: 15px;
   border: 1px solid #fd9222;
   transition: border 250ms ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 .milk-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 101%;
-  height: 101%;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   border-radius: 15px;
   padding: 20px 20px 20px 20px;
+  overflow-y: hidden;
 
   transform: translatey(100%);
   transition: transform 250ms ease-in-out;
@@ -85,23 +103,32 @@
 /* NUTS */
 .nuts-box {
   position: relative;
-  width: 270px;
+  width: 335px;
   height: 270px;
   margin: 0 auto;
   background-color: #111;
   overflow: hidden;
   border-radius: 15px;
   transition: background-color 250ms ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 .nuts-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   border-radius: 15px;
   padding: 20px 20px 20px 20px;
+  overflow-y: hidden;
 
   transform: translatey(100%);
   transition: transform 250ms ease-in-out;
@@ -119,7 +146,7 @@
   color: #111;
   margin: 0;
   font-family: inherit;
-  font-size: 12px;
+  font-size: 14px;
   width: auto 0;
   height: auto 0;
 }
@@ -127,7 +154,7 @@
 /* SWEET CHOCOLATE */
 .sweet-chocolate-box {
   position: relative;
-  width: 270px;
+  width: 335px;
   height: 270px;
   margin: 0 auto;
   background-color: #fff;
@@ -135,16 +162,25 @@
   border-radius: 15px;
   border: 1px solid #fd9222;
   transition: border 250ms ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 .sweet-chocolate-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 101%;
-  height: 101%;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   border-radius: 15px;
   padding: 20px 20px 20px 20px;
+  overflow-y: hidden;
 
   transform: translatey(100%);
   transition: transform 250ms ease-in-out;
@@ -162,7 +198,7 @@
   color: #111;
   margin: 0;
   font-family: inherit;
-  font-size: 12px;
+  font-size: 14px;
   width: auto 0;
   height: auto 0;
 

@@ -2,7 +2,7 @@ var swiper = new Swiper('.myswiper', {
   slidesPerView: 5,
   spaceBetween: 18,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.products-swiper-pagination',
     clickable: true,
   },
   breakpoints: {

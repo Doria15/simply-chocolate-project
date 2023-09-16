@@ -282,13 +282,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   padding: 8px 16px;
   gap: 77px;
   width: 100%;
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fff;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -301,22 +302,47 @@
   }
 }
 
+.modal-best-seller-item:hover,
+.modal-best-seller-item:focus {
+  border: 1.5px solid var(--orange);
+}
+
+.modal-best-seller-item:hover .buy-btn-m,
+.modal-best-seller-item:focus .buy-btn-m {
+  background-color: var(--pale);
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
 .best-seller-image {
   @media screen and (min-width: 375px) {
   }
 }
 
 .buy-btn-m {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   padding: 6px 16px;
+  margin-left: -20px;
   justify-content: center;
   gap: 14px;
   border-radius: 100px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fafafa;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: unset;
+  }
 }
 
 /* personal info */
@@ -409,7 +435,7 @@
 .form-input:focus,
 .form-textarea:hover,
 .form-textarea:focus {
-  border: 2px solid var(--orange);
+  border: 1.5px solid var(--orange);
 }
 
 .form-input.phone-number {
@@ -455,7 +481,7 @@
 }
 
 .best-seller-name-surname {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: space-between;

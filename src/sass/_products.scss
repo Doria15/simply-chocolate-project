@@ -191,7 +191,7 @@
   }
 }
 
-.myswiper {
+.myswiper.products-swiper {
   padding: 50px 0;
 }
 
@@ -251,6 +251,14 @@
   border-radius: 100px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background: #fafafa;
+}
+
+.swiper-pagination.products-swiper-pagination {
+  display: flex;
+  justify-content: center;
+  // height: 13px;
+  // width: 107px;
+  // padding-top: 32px;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
